@@ -448,17 +448,12 @@ export default {
 
 <style>
 
-#app {
-  /*width: 100vw;*/
-  /*background: #f1f1f1;*/
-}
-
 .header {
   display: flex;
   width: 100%;
   height: 60px;
   padding: 10px 20px;
-  background: #1890ff;
+  background: #1677ff;
 }
 
 .header-main {
@@ -525,19 +520,5 @@ export default {
   background: #f6ffed;
 }
 
-.icon {
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
-}
-
-.right-content {
-  line-height: 40px;
-  font-size: 18px;
-  color: white;
-  cursor: pointer;
-}
 
 </style>

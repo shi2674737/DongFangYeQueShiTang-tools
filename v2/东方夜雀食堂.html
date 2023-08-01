@@ -119,10 +119,9 @@
               .filter(c => customerTypes.includes(c.type))
               .filter(c => c.distanceList.filter(d => distanceTypes.includes(d)).length > 0)
               .sort((c1, c2) => c1.type.localeCompare(c2.type))" :key="i">
-                <a-image :class="customer.name === selectedCustomer?.name ? 'selected' : ''" :preview="false" class="customer-tag"  :src="getImageUrl(customer)" :alt="customer.name" @click="handleClickCus(customer)"></a-image>
-<!--                <a-tag v-else class="customer-tag" @click="handleClickCus(customer)" :color="customer.name === selectedCustomer?.name ? '#d3adf7' : 'purple'">
+                <a-tag v-else class="customer-tag" @click="handleClickCus(customer)" :color="customer.name === selectedCustomer?.name ? '#d3adf7' : 'purple'">
                   {{ customer.name }}
-                </a-tag>-->
+                </a-tag>
               </template>
             </div>
           </a-card>
@@ -522,9 +521,9 @@
 
   .customer-tag {
     flex-shrink: 0;
-    width: 120px;
-    height: 160px;
-    line-height: 30px;
+    width: 90px;
+    height: 120px;
+    padding: 20px 10px;
     margin: 0 8px 8px 0;
     font-size: 14px;
     text-align: center;
