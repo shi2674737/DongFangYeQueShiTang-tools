@@ -1,4 +1,4 @@
-### 这是一个基于vue3 + vite + ant-design 构建的游戏查询小工具
+### 这是一个基于vue3 + vite + ant-design + plugin-legacy 构建的游戏查询小工具
 
 使用说明
 v3版 进入 dist 目录 打开 index.html 就可以使用了
