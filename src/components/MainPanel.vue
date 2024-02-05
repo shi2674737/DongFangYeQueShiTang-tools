@@ -205,7 +205,7 @@ export default {
     }
 
     const getWeight = (data) => {
-      return data.score * 1000 + data.price;
+      return data.score * 1000 + parseInt(data.price);
     }
 
     const getFavDish = (customerName, tag = null, lessPrice = true) => {
@@ -348,7 +348,7 @@ export default {
     }
 
     const getCustomerMoney = (customer) => {
-      const m = customer?.money?.join('-') || '';
+      const m = customer?.money || '';
       return m ? `${customer.name}:${m}金` : '';
     }
 
